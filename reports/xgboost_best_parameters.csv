@@ -1,0 +1,7 @@
+Parameter,Best Value
+model__subsample,0.9
+model__n_estimators,300.0
+model__min_child_weight,3.0
+model__max_depth,3.0
+model__learning_rate,0.05
+model__colsample_bytree,1.0

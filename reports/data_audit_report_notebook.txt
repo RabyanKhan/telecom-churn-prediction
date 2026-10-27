@@ -1,0 +1,42 @@
+TELECOM CUSTOMER CHURN PREDICTION
+DATA AUDIT REPORT
+==================
+
+1. Dataset Overview
+- Raw dataset size: 1300 rows and 23 columns.
+- Raw dataset is preserved without modification.
+
+2. Missing Values
+- Actual NaN values: 540.
+- Placeholder values such as '--' and 'Not Available'
+  were found in multiple columns.
+
+3. Duplicate Records
+- Exact duplicate rows: 35.
+- Repeated customer IDs also require investigation.
+  Repeated IDs are not automatically duplicates.
+
+4. Numeric Data Quality
+- monthly_charges: 43 non-numeric values.
+- total_charges: 121 non-numeric values.
+- tenure_months: 6 non-numeric values.
+- avg_monthly_gb: 12 non-numeric values.
+- support_calls: 22 non-numeric values.
+- late_payments: 14 non-numeric values.
+
+5. Inconsistent Data
+- senior_citizen contains mixed formats, including
+  numeric flags and Yes/No text.
+- Text categories require standardization.
+- Charges contain inconsistent currency formats.
+- Date values require consistent date parsing.
+- Churn labels require checking for inconsistent categories.
+
+6. Proposed Cleaning Actions
+- Standardize text casing and whitespace.
+- Convert recognized missing placeholders to NaN.
+- Normalize valid currency values before numeric conversion.
+- Standardize senior_citizen to a consistent binary format.
+- Investigate repeated customer IDs and conflicting records.
+- Validate ranges and date formats.
+- Preserve the original raw dataset.

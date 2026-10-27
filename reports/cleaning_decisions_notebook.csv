@@ -1,0 +1,7 @@
+Column,Finding,Decision
+monthly_charges,One customer has zero monthly charges despite 21 months tenure and positive total charges.,Flag for investigation; do not change without supporting evidence.
+support_calls,One customer has 10 support calls; most observed values are 0–7.,Retain unless evidence confirms the value is invalid.
+tenure_months,"Observed range is 0–71 months, with 56 missing values.",Retain valid observed values; handle missing values in the preprocessing pipeline.
+churn,12 records have missing target labels.,Exclude these records from supervised model training.
+customer_satisfaction,100 values are missing; 'Very good' appears 6 times.,Preserve the observed categories; decide imputation using training data only.
+signup_date,62 dates could not be parsed.,Treat as missing for now; do not invent dates.

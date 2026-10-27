@@ -1,0 +1,47 @@
+TELECOM CUSTOMER CHURN - DATA AUDIT REPORT
+=======================================================
+
+Raw dataset shape: 1300 rows x 23 columns
+Cleaned dataset shape: 1250 rows x 23 columns
+Exact duplicate rows removed: 50
+Rows with known churn labels for modeling: 1238
+Rows with missing churn labels excluded: 12
+
+Missing values detected after normalizing raw missing-value markers:
+customer_satisfaction    102
+avg_monthly_gb            75
+support_calls             67
+late_payments             56
+monthly_charges           52
+payment_method            52
+total_charges             44
+tech_support              39
+online_security           38
+internet_service          38
+gender                    38
+tenure_months             37
+signup_date               26
+contract_type             26
+partner                   25
+churn                     13
+
+Invalid numeric values by column:
+tenure_months      20
+monthly_charges    10
+total_charges       0
+avg_monthly_gb     10
+support_calls      12
+late_payments       0
+
+Repeated customer IDs are retained for review, not automatically deleted.
+Repeated-ID report: conflicting_customer_ids.csv
+
+Numeric validation ranges:
+tenure_months: 0-120
+monthly_charges: 0-500
+total_charges: 0-100000
+avg_monthly_gb: 0-1000
+support_calls: 0-30
+late_payments: 0-30
+
+Values outside these ranges are marked missing, not clipped.

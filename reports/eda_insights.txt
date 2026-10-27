@@ -1,0 +1,13 @@
+TELECOM CUSTOMER CHURN - EXPLORATORY DATA ANALYSIS INSIGHTS
+=================================================================
+
+1. Churn distribution: 403 of 1,238 customers (32.6%) are labeled as churned.
+
+2. Churn by contract: Month-to-month has the highest observed churn rate (50.7%) among contract types.
+
+3. Monthly charges: The median monthly charge for churned customers (84.80) is higher the median for retained customers (71.27).
+
+4. Tenure: The median tenure of churned customers (18.0 months) is shorter the median tenure of retained customers (27.5 months).
+
+5. Churn by internet service: Fiber optic has the highest observed churn rate (41.4%) among internet-service groups.
+

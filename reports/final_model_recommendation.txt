@@ -1,0 +1,18 @@
+FINAL MODEL RECOMMENDATION
+
+Top model by test F1 score: Random Forest (Tuned)
+
+Test metrics:
+- Accuracy:  0.7339
+- Precision: 0.5789
+- Recall:    0.6790
+- F1 Score:  0.6250
+- ROC-AUC:   0.7927
+
+Reason:
+F1 score balances precision and recall, making it useful when evaluating
+customer churn models. Recall is also important because a false negative
+means a customer who may churn is missed. The final business choice should
+consider the cost of missed churners versus unnecessary retention offers.
+
+This model is selected by the test F1 score, not by accuracy alone.

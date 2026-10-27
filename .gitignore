@@ -1,0 +1,15 @@
+
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+telecom_churn_raw.csv
+telecom_churn_clean.csv
+data/**/*.csv
+reports/conflicting_customer_ids.csv
+reports/X_test.csv
+reports/y_test.csv
